@@ -24,7 +24,9 @@
     <section class="Dashboard max-w-7xl mx-auto">
       <h1 class="text-3xl font-bold mb-6 pt-[60px]">Job Application Tracker</h1>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left"
+      >
         <div class="bg-white p-6 rounded-xl shadow">
           <h2 class="text-gray-500 text-sm">Total</h2>
           <p id="total-jobs" class="text-3xl font-bold mt-2">8</p>
@@ -50,36 +52,37 @@
 
     <section class="max-w-7xl mx-auto space-y-4">
       <div class="flex justify-between items-center mb-6">
-        <h2 class="text-2xl font-semibold">
-          <span id="tab_type">Available Jobs</span>
-        </h2>
-        <p id="job_count" class="text-gray-500">8 Jobs</p>
+        <h2 class="text-2xl font-semibold">Available Jobs</h2>
+        <p class="text-gray-500">
+          <span id="job_count">8</span> jobs
+        </p>
       </div>
 
       <div class="flex gap-4 mb-6 pb-2">
         <button
           id="tab_all"
-          class="px-4 py-2 bg-blue-600 text-white rounded-lg transition"
+          class="px-4 py-2 bg-gray-200 text-gray-700  rounded-lg "
         >
           All
         </button>
 
         <button
           id="tab_interview"
-          class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg transition"
+          class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg"
         >
           Interview
         </button>
 
         <button
           id="tab_rejected"
-          class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg transition"
+          class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg"
         >
           Rejected
         </button>
       </div>
 
-      <div class="grid grid-cols-1 gap-4 pb-4">
+      <!-- All Data -->
+      <div id="all_jobs" class="grid grid-cols-1 gap-4 pb-4">
         <div id="job_card_1" class="bg-white p-6 rounded-xl shadow relative">
           <button
             id="delete_btn_1"
@@ -462,6 +465,31 @@
           </div>
         </div>
       </div>
+
+      <!-- interview data -->
+      <div id="interview_jobs" class="grid grid-cols-1 gap-4 pb-4 hidden">
+        <div
+          class="bg-white p-6 rounded-xl shadow relative flex flex-col items-center justify-center p-[60px]"
+        >
+          <img src="./Assets/jobs.png" alt="" />
+          <h2 class="ml-4 text-2xl font-bold">No Jobs Available</h2>
+          <p class="text-gray-400">Check back soon for new job opportunities</p>
+        </div>
+      </div>
+
+      <div id="rejected_jobs" class="grid grid-cols-1 gap-4 pb-4 hidden">
+        <div
+          class="bg-white p-6 rounded-xl shadow relative flex flex-col items-center justify-center p-[60px]"
+        >
+          <img src="./Assets/jobs.png" alt="" />
+          <h2 class="ml-4 text-2xl font-bold">No Jobs Available</h2>
+          <p class="text-gray-400">Check back soon for new job opportunities</p>
+        </div>
+      </div>
     </section>
+
+
+    <script src="./script/machine.js"></script>
+    
   </body>
 </html>
