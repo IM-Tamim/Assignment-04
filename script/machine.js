@@ -13,6 +13,17 @@ const count = document.getElementById("job_count");
 btnAll.classList.remove("bg-gray-200", "text-gray-700");
 btnAll.classList.add("bg-blue-600", "text-white");
 
+// function to count real jobs
+function countJobs(section) {
+  let realJobs = 0;
+  for (let i = 0; i < section.children.length; i++) {
+    if (!section.children[i].classList.contains("dontCount")) {
+      realJobs++;
+    }
+  }
+  return realJobs;
+}
+
 // function to switch tabs
 function switchTab(id) {
   allJobs.classList.add("hidden");
@@ -28,13 +39,13 @@ function switchTab(id) {
 
   if (id === btnAll) {
     allJobs.classList.remove("hidden");
-    count.innerText = allJobs.children.length;
+    count.innerText = countJobs(allJobs);
   } else if (id === btnInterview) {
     interviewJobs.classList.remove("hidden");
-    count.innerText = interviewJobs.children.length-1;
+    count.innerText = countJobs(interviewJobs);
   } else if (id === btnRejected) {
     rejectedJobs.classList.remove("hidden");
-    count.innerText = rejectedJobs.children.length-1;
+    count.innerText = countJobs(rejectedJobs);
   }
   id.classList.remove("bg-gray-200", "text-gray-700");
   id.classList.add("bg-blue-600", "text-white");
