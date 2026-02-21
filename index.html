@@ -29,7 +29,7 @@
       >
         <div class="bg-white p-6 rounded-xl shadow">
           <h2 class="text-gray-500 text-sm">Total</h2>
-          <p id="total-jobs" class="text-3xl font-bold mt-2">8</p>
+          <p id="total-jobs" class="text-3xl font-bold mt-2">0</p>
         </div>
 
         <div class="bg-white p-6 rounded-xl shadow">
@@ -81,389 +81,319 @@
 
       <!-- All Data -->
       <div id="all_jobs" class="grid grid-cols-1 gap-4 pb-4">
-        <div id="no_job_all"
+        <div
+          id="no_job_all"
           class="bg-white p-6 rounded-xl shadow relative flex flex-col items-center justify-center p-[60px] dontCount hidden"
         >
           <img src="./Assets/jobs.png" alt="" />
           <h2 class="ml-4 text-2xl font-bold">No Jobs Available</h2>
           <p class="text-gray-400">Check back soon for new job opportunities</p>
         </div>
-        <div id="job_card_1" class="bg-white p-6 rounded-xl shadow relative">
+
+        <!-- Card 1 -->
+        <div class="job_card bg-white p-6 rounded-xl shadow relative">
           <button
-            id="delete_btn_1"
-            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+            class="delete_btn absolute top-4 right-4 text-gray-500 hover:text-red-500"
           >
             <div class="bg-gray-100 rounded-full p-2">
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </button>
-
           <h3 class="text-lg font-semibold text-gray-800">Mobile First Corp</h3>
-          <p class="text-gray-500">React Native Developer</p>
-
+          <h4 class="text-gray-500">React Native Developer</h4>
           <p class="text-sm text-gray-500 mt-2">
             Remote • Full-time • $130,000 - $175,000
           </p>
-
           <div class="mt-4">
             <span
-              id="status_1"
-              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              class="status_badge text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              >NOT APPLIED</span
             >
-              NOT APPLIED
-            </span>
           </div>
-
-          <p class="mt-4 text-gray-600 text-sm">
+          <p class="p_text mt-4 text-gray-600 text-sm">
             Build cross-platform mobile applications using React Native and
             deliver high-performance mobile experiences.
           </p>
-
           <div class="flex gap-3 mt-5">
             <button
-              id="interview_btn_1"
-              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+              class="interview_btn border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
             >
               INTERVIEW
             </button>
             <button
-              id="rejected_btn_1"
-              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+              class="rejected_btn border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
             >
               REJECTED
             </button>
           </div>
         </div>
 
-        <div id="job_card_2" class="bg-white p-6 rounded-xl shadow relative">
+        <!-- Card 2 -->
+        <div class="job_card bg-white p-6 rounded-xl shadow relative">
           <button
-            id="delete_btn_2"
-            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+            class="delete_btn absolute top-4 right-4 text-gray-500 hover:text-red-500"
           >
             <div class="bg-gray-100 rounded-full p-2">
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </button>
-
           <h3 class="text-lg font-semibold text-gray-800">
             TechNova Solutions
           </h3>
-          <p class="text-gray-500">Frontend Developer</p>
-
+          <h4 class="text-gray-500">Frontend Developer</h4>
           <p class="text-sm text-gray-500 mt-2">
             Dhaka • Full-time • $60,000 - $85,000
           </p>
-
           <div class="mt-4">
             <span
-              id="status_2"
-              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              class="status_badge text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              >NOT APPLIED</span
             >
-              NOT APPLIED
-            </span>
           </div>
-
-          <p class="mt-4 text-gray-600 text-sm">
+          <p class="p_text mt-4 text-gray-600 text-sm">
             Develop responsive web interfaces and collaborate with backend teams
             to deliver seamless user experiences.
           </p>
-
           <div class="flex gap-3 mt-5">
             <button
-              id="interview_btn_2"
-              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+              class="interview_btn border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
             >
               INTERVIEW
             </button>
             <button
-              id="rejected_btn_2"
-              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+              class="rejected_btn border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
             >
               REJECTED
             </button>
           </div>
         </div>
 
-        <div id="job_card_3" class="bg-white p-6 rounded-xl shadow relative">
+        <!-- Card 3 -->
+        <div class="job_card bg-white p-6 rounded-xl shadow relative">
           <button
-            id="delete_btn_3"
-            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+            class="delete_btn absolute top-4 right-4 text-gray-500 hover:text-red-500"
           >
             <div class="bg-gray-100 rounded-full p-2">
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </button>
-
           <h3 class="text-lg font-semibold text-gray-800">DataSphere Inc.</h3>
-          <p class="text-gray-500">Data Analyst</p>
-
+          <h4 class="text-gray-500">Data Analyst</h4>
           <p class="text-sm text-gray-500 mt-2">
             Hybrid • Full-time • $70,000 - $95,000
           </p>
-
           <div class="mt-4">
             <span
-              id="status_3"
-              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              class="status_badge text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              >NOT APPLIED</span
             >
-              NOT APPLIED
-            </span>
           </div>
-
-          <p class="mt-4 text-gray-600 text-sm">
+          <p class="p_text mt-4 text-gray-600 text-sm">
             Analyze business datasets and generate actionable insights through
             dashboards and reports.
           </p>
-
           <div class="flex gap-3 mt-5">
             <button
-              id="interview_btn_3"
-              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+              class="interview_btn border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
             >
               INTERVIEW
             </button>
             <button
-              id="rejected_btn_3"
-              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+              class="rejected_btn border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
             >
               REJECTED
             </button>
           </div>
         </div>
 
-        <div id="job_card_4" class="bg-white p-6 rounded-xl shadow relative">
+        <!-- Card 4 -->
+        <div class="job_card bg-white p-6 rounded-xl shadow relative">
           <button
-            id="delete_btn_4"
-            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+            class="delete_btn absolute top-4 right-4 text-gray-500 hover:text-red-500"
           >
             <div class="bg-gray-100 rounded-full p-2">
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </button>
-
           <h3 class="text-lg font-semibold text-gray-800">CloudNet Systems</h3>
-          <p class="text-gray-500">DevOps Engineer</p>
-
+          <h4 class="text-gray-500">DevOps Engineer</h4>
           <p class="text-sm text-gray-500 mt-2">
             Remote • Full-time • $110,000 - $140,000
           </p>
-
           <div class="mt-4">
             <span
-              id="status_4"
-              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              class="status_badge text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              >NOT APPLIED</span
             >
-              NOT APPLIED
-            </span>
           </div>
-
-          <p class="mt-4 text-gray-600 text-sm">
+          <p class="p_text mt-4 text-gray-600 text-sm">
             Maintain cloud infrastructure, automate deployments, and ensure high
             system reliability.
           </p>
-
           <div class="flex gap-3 mt-5">
             <button
-              id="interview_btn_4"
-              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+              class="interview_btn border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
             >
               INTERVIEW
             </button>
             <button
-              id="rejected_btn_4"
-              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+              class="rejected_btn border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
             >
               REJECTED
             </button>
           </div>
         </div>
 
-        <div id="job_card_5" class="bg-white p-6 rounded-xl shadow relative">
+        <!-- Card 5 -->
+        <div class="job_card bg-white p-6 rounded-xl shadow relative">
           <button
-            id="delete_btn_5"
-            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+            class="delete_btn absolute top-4 right-4 text-gray-500 hover:text-red-500"
           >
             <div class="bg-gray-100 rounded-full p-2">
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </button>
-
           <h3 class="text-lg font-semibold text-gray-800">CyberSecure Ltd.</h3>
-          <p class="text-gray-500">Cybersecurity Specialist</p>
-
+          <h4 class="text-gray-500">Cybersecurity Specialist</h4>
           <p class="text-sm text-gray-500 mt-2">
             Chattogram • Full-time • $90,000 - $120,000
           </p>
-
           <div class="mt-4">
             <span
-              id="status_5"
-              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              class="status_badge text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              >NOT APPLIED</span
             >
-              NOT APPLIED
-            </span>
           </div>
-
-          <p class="mt-4 text-gray-600 text-sm">
+          <p class="p_text mt-4 text-gray-600 text-sm">
             Identify vulnerabilities, monitor threats, and implement advanced
             security measures.
           </p>
-
           <div class="flex gap-3 mt-5">
             <button
-              id="interview_btn_5"
-              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+              class="interview_btn border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
             >
               INTERVIEW
             </button>
             <button
-              id="rejected_btn_5"
-              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+              class="rejected_btn border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
             >
               REJECTED
             </button>
           </div>
         </div>
 
-        <div id="job_card_6" class="bg-white p-6 rounded-xl shadow relative">
+        <!-- Card 6 -->
+        <div class="job_card bg-white p-6 rounded-xl shadow relative">
           <button
-            id="delete_btn_6"
-            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+            class="delete_btn absolute top-4 right-4 text-gray-500 hover:text-red-500"
           >
             <div class="bg-gray-100 rounded-full p-2">
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </button>
-
           <h3 class="text-lg font-semibold text-gray-800">
             AI Innovations Lab
           </h3>
-          <p class="text-gray-500">Machine Learning Engineer</p>
-
+          <h4 class="text-gray-500">Machine Learning Engineer</h4>
           <p class="text-sm text-gray-500 mt-2">
             Remote • Contract • $120,000 - $160,000
           </p>
-
           <div class="mt-4">
             <span
-              id="status_6"
-              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              class="p_text status_badge text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              >NOT APPLIED</span
             >
-              NOT APPLIED
-            </span>
           </div>
-
           <p class="mt-4 text-gray-600 text-sm">
             Design, train, and deploy machine learning models for large-scale
             real-world applications.
           </p>
-
           <div class="flex gap-3 mt-5">
             <button
-              id="interview_btn_6"
-              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+              class="interview_btn border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
             >
               INTERVIEW
             </button>
             <button
-              id="rejected_btn_6"
-              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+              class="rejected_btn border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
             >
               REJECTED
             </button>
           </div>
         </div>
 
-        <div id="job_card_7" class="bg-white p-6 rounded-xl shadow relative">
+        <!-- Card 7 -->
+        <div class="job_card bg-white p-6 rounded-xl shadow relative">
           <button
-            id="delete_btn_7"
-            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+            class="delete_btn absolute top-4 right-4 text-gray-500 hover:text-red-500"
           >
             <div class="bg-gray-100 rounded-full p-2">
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </button>
-
           <h3 class="text-lg font-semibold text-gray-800">
             BrightWave Marketing
           </h3>
-          <p class="text-gray-500">UI/UX Designer</p>
-
+          <h4 class="text-gray-500">UI/UX Designer</h4>
           <p class="text-sm text-gray-500 mt-2">
             Dhaka • Part-time • $50,000 - $70,000
           </p>
-
           <div class="mt-4">
             <span
-              id="status_7"
-              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              class="status_badge text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              >NOT APPLIED</span
             >
-              NOT APPLIED
-            </span>
           </div>
-
-          <p class="mt-4 text-gray-600 text-sm">
+          <p class="p_text mt-4 text-gray-600 text-sm">
             Create intuitive user interfaces and improve user experience across
             digital platforms.
           </p>
-
           <div class="flex gap-3 mt-5">
             <button
-              id="interview_btn_7"
-              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+              class="interview_btn border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
             >
               INTERVIEW
             </button>
             <button
-              id="rejected_btn_7"
-              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+              class="rejected_btn border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
             >
               REJECTED
             </button>
           </div>
         </div>
 
-        <div id="job_card_8" class="bg-white p-6 rounded-xl shadow relative">
+        <!-- Card 8 -->
+        <div class="job_card bg-white p-6 rounded-xl shadow relative">
           <button
-            id="delete_btn_8"
-            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+            class="delete_btn absolute top-4 right-4 text-gray-500 hover:text-red-500"
           >
             <div class="bg-gray-100 rounded-full p-2">
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </button>
-
           <h3 class="text-lg font-semibold text-gray-800">FinTech Global</h3>
-          <p class="text-gray-500">Backend Developer</p>
-
+          <h4 class="text-gray-500">Backend Developer</h4>
           <p class="text-sm text-gray-500 mt-2">
             Remote • Full-time • $100,000 - $130,000
           </p>
-
           <div class="mt-4">
             <span
-              id="status_8"
-              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              class="status_badge text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+              >NOT APPLIED</span
             >
-              NOT APPLIED
-            </span>
           </div>
-
-          <p class="mt-4 text-gray-600 text-sm">
+          <p class="p_text mt-4 text-gray-600 text-sm">
             Build secure and scalable backend APIs to support fintech
             applications and services.
           </p>
-
           <div class="flex gap-3 mt-5">
             <button
-              id="interview_btn_8"
-              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+              class="interview_btn border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
             >
               INTERVIEW
             </button>
             <button
-              id="rejected_btn_8"
-              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+              class="rejected_btn border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
             >
               REJECTED
             </button>
@@ -474,25 +404,30 @@
       <!-- interview data -->
       <div id="interview_jobs" class="grid grid-cols-1 gap-4 pb-4 hidden">
         <div
+          id="no_job_interview"
           class="bg-white p-6 rounded-xl shadow relative flex flex-col items-center justify-center p-[60px] dontCount"
         >
           <img src="./Assets/jobs.png" alt="" />
           <h2 class="ml-4 text-2xl font-bold">No Jobs Available</h2>
           <p class="text-gray-400">Check back soon for new job opportunities</p>
         </div>
+        <div id="interview_blank"></div>
       </div>
       <!-- rejected data -->
       <div id="rejected_jobs" class="grid grid-cols-1 gap-4 pb-4 hidden">
         <div
+          id="no_job_rejected"
           class="bg-white p-6 rounded-xl shadow relative flex flex-col items-center justify-center p-[60px] dontCount"
         >
           <img src="./Assets/jobs.png" alt="" />
           <h2 class="ml-4 text-2xl font-bold">No Jobs Available</h2>
           <p class="text-gray-400">Check back soon for new job opportunities</p>
         </div>
+        <div id="rejected_blank"></div>
       </div>
     </section>
 
     <script src="./script/machine.js"></script>
+    <script src="./script/job_selection.js"></script>
   </body>
 </html>
