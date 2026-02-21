@@ -20,5 +20,448 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body></body>
+  <body class="min-h-screen w-full bg-base-200">
+    <section class="Dashboard max-w-7xl mx-auto">
+      <h1 class="text-3xl font-bold mb-6 pt-[60px]">Job Application Tracker</h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h2 class="text-gray-500 text-sm">Total</h2>
+          <p id="total-jobs" class="text-3xl font-bold mt-2">8</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h2 class="text-gray-500 text-sm">Interview</h2>
+          <p id="interview-jobs" class="text-3xl font-bold mt-2 text-green-600">
+            0
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h2 class="text-gray-500 text-sm">Rejected</h2>
+          <p id="rejected-jobs" class="text-3xl font-bold mt-2 text-red-600">
+            0
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-6 text-gray-300 max-w-7xl mx-auto" />
+
+    <section class="max-w-7xl mx-auto space-y-4">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-semibold">
+          <span id="tab_type">Available Jobs</span>
+        </h2>
+        <p id="job_count" class="text-gray-500">8 Jobs</p>
+      </div>
+
+      <div class="flex gap-4 mb-6 pb-2">
+        <button
+          id="tab_all"
+          class="px-4 py-2 bg-blue-600 text-white rounded-lg transition"
+        >
+          All
+        </button>
+
+        <button
+          id="tab_interview"
+          class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg transition"
+        >
+          Interview
+        </button>
+
+        <button
+          id="tab_rejected"
+          class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg transition"
+        >
+          Rejected
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 pb-4">
+        <div id="job_card_1" class="bg-white p-6 rounded-xl shadow relative">
+          <button
+            id="delete_btn_1"
+            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+          >
+            <div class="bg-gray-100 rounded-full p-2">
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </button>
+
+          <h3 class="text-lg font-semibold text-gray-800">Mobile First Corp</h3>
+          <p class="text-gray-500">React Native Developer</p>
+
+          <p class="text-sm text-gray-500 mt-2">
+            Remote • Full-time • $130,000 - $175,000
+          </p>
+
+          <div class="mt-4">
+            <span
+              id="status_1"
+              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+            >
+              NOT APPLIED
+            </span>
+          </div>
+
+          <p class="mt-4 text-gray-600 text-sm">
+            Build cross-platform mobile applications using React Native and
+            deliver high-performance mobile experiences.
+          </p>
+
+          <div class="flex gap-3 mt-5">
+            <button
+              id="interview_btn_1"
+              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+            >
+              INTERVIEW
+            </button>
+            <button
+              id="rejected_btn_1"
+              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+            >
+              REJECTED
+            </button>
+          </div>
+        </div>
+
+        <div id="job_card_2" class="bg-white p-6 rounded-xl shadow relative">
+          <button
+            id="delete_btn_2"
+            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+          >
+            <div class="bg-gray-100 rounded-full p-2">
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </button>
+
+          <h3 class="text-lg font-semibold text-gray-800">
+            TechNova Solutions
+          </h3>
+          <p class="text-gray-500">Frontend Developer</p>
+
+          <p class="text-sm text-gray-500 mt-2">
+            Dhaka • Full-time • $60,000 - $85,000
+          </p>
+
+          <div class="mt-4">
+            <span
+              id="status_2"
+              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+            >
+              NOT APPLIED
+            </span>
+          </div>
+
+          <p class="mt-4 text-gray-600 text-sm">
+            Develop responsive web interfaces and collaborate with backend teams
+            to deliver seamless user experiences.
+          </p>
+
+          <div class="flex gap-3 mt-5">
+            <button
+              id="interview_btn_2"
+              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+            >
+              INTERVIEW
+            </button>
+            <button
+              id="rejected_btn_2"
+              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+            >
+              REJECTED
+            </button>
+          </div>
+        </div>
+
+        <div id="job_card_3" class="bg-white p-6 rounded-xl shadow relative">
+          <button
+            id="delete_btn_3"
+            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+          >
+            <div class="bg-gray-100 rounded-full p-2">
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </button>
+
+          <h3 class="text-lg font-semibold text-gray-800">DataSphere Inc.</h3>
+          <p class="text-gray-500">Data Analyst</p>
+
+          <p class="text-sm text-gray-500 mt-2">
+            Hybrid • Full-time • $70,000 - $95,000
+          </p>
+
+          <div class="mt-4">
+            <span
+              id="status_3"
+              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+            >
+              NOT APPLIED
+            </span>
+          </div>
+
+          <p class="mt-4 text-gray-600 text-sm">
+            Analyze business datasets and generate actionable insights through
+            dashboards and reports.
+          </p>
+
+          <div class="flex gap-3 mt-5">
+            <button
+              id="interview_btn_3"
+              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+            >
+              INTERVIEW
+            </button>
+            <button
+              id="rejected_btn_3"
+              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+            >
+              REJECTED
+            </button>
+          </div>
+        </div>
+
+        <div id="job_card_4" class="bg-white p-6 rounded-xl shadow relative">
+          <button
+            id="delete_btn_4"
+            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+          >
+            <div class="bg-gray-100 rounded-full p-2">
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </button>
+
+          <h3 class="text-lg font-semibold text-gray-800">CloudNet Systems</h3>
+          <p class="text-gray-500">DevOps Engineer</p>
+
+          <p class="text-sm text-gray-500 mt-2">
+            Remote • Full-time • $110,000 - $140,000
+          </p>
+
+          <div class="mt-4">
+            <span
+              id="status_4"
+              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+            >
+              NOT APPLIED
+            </span>
+          </div>
+
+          <p class="mt-4 text-gray-600 text-sm">
+            Maintain cloud infrastructure, automate deployments, and ensure high
+            system reliability.
+          </p>
+
+          <div class="flex gap-3 mt-5">
+            <button
+              id="interview_btn_4"
+              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+            >
+              INTERVIEW
+            </button>
+            <button
+              id="rejected_btn_4"
+              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+            >
+              REJECTED
+            </button>
+          </div>
+        </div>
+
+        <div id="job_card_5" class="bg-white p-6 rounded-xl shadow relative">
+          <button
+            id="delete_btn_5"
+            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+          >
+            <div class="bg-gray-100 rounded-full p-2">
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </button>
+
+          <h3 class="text-lg font-semibold text-gray-800">CyberSecure Ltd.</h3>
+          <p class="text-gray-500">Cybersecurity Specialist</p>
+
+          <p class="text-sm text-gray-500 mt-2">
+            Chattogram • Full-time • $90,000 - $120,000
+          </p>
+
+          <div class="mt-4">
+            <span
+              id="status_5"
+              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+            >
+              NOT APPLIED
+            </span>
+          </div>
+
+          <p class="mt-4 text-gray-600 text-sm">
+            Identify vulnerabilities, monitor threats, and implement advanced
+            security measures.
+          </p>
+
+          <div class="flex gap-3 mt-5">
+            <button
+              id="interview_btn_5"
+              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+            >
+              INTERVIEW
+            </button>
+            <button
+              id="rejected_btn_5"
+              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+            >
+              REJECTED
+            </button>
+          </div>
+        </div>
+
+        <div id="job_card_6" class="bg-white p-6 rounded-xl shadow relative">
+          <button
+            id="delete_btn_6"
+            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+          >
+            <div class="bg-gray-100 rounded-full p-2">
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </button>
+
+          <h3 class="text-lg font-semibold text-gray-800">
+            AI Innovations Lab
+          </h3>
+          <p class="text-gray-500">Machine Learning Engineer</p>
+
+          <p class="text-sm text-gray-500 mt-2">
+            Remote • Contract • $120,000 - $160,000
+          </p>
+
+          <div class="mt-4">
+            <span
+              id="status_6"
+              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+            >
+              NOT APPLIED
+            </span>
+          </div>
+
+          <p class="mt-4 text-gray-600 text-sm">
+            Design, train, and deploy machine learning models for large-scale
+            real-world applications.
+          </p>
+
+          <div class="flex gap-3 mt-5">
+            <button
+              id="interview_btn_6"
+              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+            >
+              INTERVIEW
+            </button>
+            <button
+              id="rejected_btn_6"
+              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+            >
+              REJECTED
+            </button>
+          </div>
+        </div>
+
+        <div id="job_card_7" class="bg-white p-6 rounded-xl shadow relative">
+          <button
+            id="delete_btn_7"
+            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+          >
+            <div class="bg-gray-100 rounded-full p-2">
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </button>
+
+          <h3 class="text-lg font-semibold text-gray-800">
+            BrightWave Marketing
+          </h3>
+          <p class="text-gray-500">UI/UX Designer</p>
+
+          <p class="text-sm text-gray-500 mt-2">
+            Dhaka • Part-time • $50,000 - $70,000
+          </p>
+
+          <div class="mt-4">
+            <span
+              id="status_7"
+              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+            >
+              NOT APPLIED
+            </span>
+          </div>
+
+          <p class="mt-4 text-gray-600 text-sm">
+            Create intuitive user interfaces and improve user experience across
+            digital platforms.
+          </p>
+
+          <div class="flex gap-3 mt-5">
+            <button
+              id="interview_btn_7"
+              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+            >
+              INTERVIEW
+            </button>
+            <button
+              id="rejected_btn_7"
+              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+            >
+              REJECTED
+            </button>
+          </div>
+        </div>
+
+        <div id="job_card_8" class="bg-white p-6 rounded-xl shadow relative">
+          <button
+            id="delete_btn_8"
+            class="absolute top-4 right-4 text-gray-500 hover:text-red-500"
+          >
+            <div class="bg-gray-100 rounded-full p-2">
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </button>
+
+          <h3 class="text-lg font-semibold text-gray-800">FinTech Global</h3>
+          <p class="text-gray-500">Backend Developer</p>
+
+          <p class="text-sm text-gray-500 mt-2">
+            Remote • Full-time • $100,000 - $130,000
+          </p>
+
+          <div class="mt-4">
+            <span
+              id="status_8"
+              class="text-xs font-semibold px-4 py-2 rounded-md bg-blue-100 text-blue-700"
+            >
+              NOT APPLIED
+            </span>
+          </div>
+
+          <p class="mt-4 text-gray-600 text-sm">
+            Build secure and scalable backend APIs to support fintech
+            applications and services.
+          </p>
+
+          <div class="flex gap-3 mt-5">
+            <button
+              id="interview_btn_8"
+              class="border border-green-500 text-green-600 px-4 py-1 rounded-md hover:bg-green-500 hover:text-white transition"
+            >
+              INTERVIEW
+            </button>
+            <button
+              id="rejected_btn_8"
+              class="border border-red-500 text-red-600 px-4 py-1 rounded-md hover:bg-red-500 hover:text-white transition"
+            >
+              REJECTED
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
