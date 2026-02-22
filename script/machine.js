@@ -1,4 +1,3 @@
-// switching tabs
 const btnAll = document.getElementById("tab_all");
 const btnInterview = document.getElementById("tab_interview");
 const btnRejected = document.getElementById("tab_rejected");
@@ -8,12 +7,13 @@ const interviewJobs = document.getElementById("interview_jobs");
 const rejectedJobs = document.getElementById("rejected_jobs");
 
 const count = document.getElementById("job_count");
+const no_job_interview = document.getElementById("no_job_interview");
+const no_job_rejected = document.getElementById("no_job_rejected");
 
-// By default the all jobs tab will be active
+
 btnAll.classList.remove("bg-gray-200", "text-gray-700");
 btnAll.classList.add("bg-blue-600", "text-white");
 
-// function to count real jobs
 function countJobs(section) {
   let realJobs = 0;
   for (let i = 0; i < section.children.length; i++) {
@@ -24,7 +24,6 @@ function countJobs(section) {
   return realJobs;
 }
 
-// function to switch tabs
 function switchTab(id) {
   allJobs.classList.add("hidden");
   interviewJobs.classList.add("hidden");
@@ -42,10 +41,26 @@ function switchTab(id) {
     count.innerText = countJobs(allJobs);
   } else if (id === btnInterview) {
     interviewJobs.classList.remove("hidden");
-    count.innerText = countJobs(interviewJobs);
+
+    const interviewCount = interviewList.length;
+    count.innerText = interviewCount;
+
+    if (interviewCount === 0) {
+      no_job_interview.classList.remove("hidden");
+    } else {
+      no_job_interview.classList.add("hidden");
+    }
   } else if (id === btnRejected) {
     rejectedJobs.classList.remove("hidden");
-    count.innerText = countJobs(rejectedJobs);
+
+    const rejectedCount = rejectedList.length;
+    count.innerText = rejectedCount;
+
+    if (rejectedCount === 0) {
+      no_job_rejected.classList.remove("hidden");
+    } else {
+      no_job_rejected.classList.add("hidden");
+    }
   }
   id.classList.remove("bg-gray-200", "text-gray-700");
   id.classList.add("bg-blue-600", "text-white");
